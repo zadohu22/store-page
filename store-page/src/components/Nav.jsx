@@ -4,30 +4,12 @@ const Nav = () => {
 	return (
 		<div class='navbar bg-base-100'>
 			<div class='navbar-start'>
-				<div class='dropdown'>
-					<label tabindex='0' class='btn btn-ghost lg:hidden'>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							class='h-5 w-5'
-							fill='none'
-							viewBox='0 0 24 24'
-							stroke='currentColor'
-						>
-							<path
-								stroke-linecap='round'
-								stroke-linejoin='round'
-								stroke-width='2'
-								d='M4 6h16M4 12h8m-8 6h16'
-							/>
-						</svg>
-					</label>
-				</div>
 				<a href='#' class='btn btn-ghost normal-case text-xl'>
 					<span className='text-orange-700'>R</span>
 					<span className='text-gray-400'>H</span>
 				</a>
 			</div>
-			<div class='navbar-center hidden lg:flex'></div>
+
 			<div class='navbar-end'>
 				<div class='flex-none'>
 					<div class='dropdown dropdown-end'>
@@ -58,7 +40,9 @@ const Nav = () => {
 								<span class='font-bold text-lg'>8 Items</span>
 								<span class='text-info'>Subtotal: $999</span>
 								<div class='card-actions'>
-									<button class='btn btn-primary btn-block'>View cart</button>
+									<button class='btn btn-primary btn-block border-black hover:bg-black hover:text-gray-400 bg-orange-700'>
+										View cart
+									</button>
 								</div>
 							</div>
 						</div>
