@@ -5,8 +5,7 @@ import Card from './Card';
 const Store = () => {
 	return (
 		<>
-			<Nav />
-			<div className='w-full h-full grid justify-items-center items-center gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+			<div className='w-full h-full mt-8 grid justify-items-center items-center gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 				<Card
 					title='Vampire'
 					description="One of our most popular monsters, they will attempt to bite the necks of trick-or-treaters. Keep garlic on hand so you don't become a victim!"
@@ -21,7 +20,7 @@ const Store = () => {
 					title='Ghosts'
 					description='New this season, spooky scary ghosts! These ghosts were hand selected directly from Ohio, making them extra scary.'
 					image='andrew-neel-hPo-jtai17o-unsplash.jpg'
-					class='object-left-bottom'
+					className='object-left-bottom'
 				/>
 				<Card
 					title='Vampire'
@@ -37,7 +36,7 @@ const Store = () => {
 					title='Ghosts'
 					description='New this season, spooky scary ghosts! These ghosts were hand selected directly from Ohio, making them extra scary.'
 					image='andrew-neel-hPo-jtai17o-unsplash.jpg'
-					class='object-left-bottom'
+					className='object-left-bottom'
 				/>
 			</div>
 		</>
