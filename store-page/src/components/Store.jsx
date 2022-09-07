@@ -16,7 +16,7 @@ const Store = (props) => {
 					price={100}
 					title='Water'
 					description='Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-david-bartus-879521.jpg'
+					image='public/pexels-david-bartus-879521.jpg'
 				/>
 				<Card
 					setNumberInCart={props.setNumberInCart}
@@ -28,7 +28,7 @@ const Store = (props) => {
 					price={200}
 					title='Water 2.0'
 					description='Water 2.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-jens-johnsson-66090.jpg'
+					image='/pexels-jens-johnsson-66090.jpg'
 				/>
 				<Card
 					setNumberInCart={props.setNumberInCart}
@@ -40,7 +40,7 @@ const Store = (props) => {
 					price={300}
 					title='Water 3.0'
 					description='Water 3.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-lisa-fotios-1346155.jpg'
+					image='/pexels-lisa-fotios-1346155.jpg'
 					className='object-left-bottom'
 				/>
 				<Card
@@ -53,7 +53,7 @@ const Store = (props) => {
 					price={400}
 					title='Water 4.0'
 					description='Water 4.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-marko-obrvan-304784.jpg'
+					image='/pexels-marko-obrvan-304784.jpg'
 				/>
 				<Card
 					setNumberInCart={props.setNumberInCart}
@@ -65,7 +65,7 @@ const Store = (props) => {
 					price={500}
 					title='Water 5.0'
 					description='Water 5.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-pixabay-40654.jpg'
+					image='/pexels-pixabay-40654.jpg'
 				/>
 				<Card
 					setNumberInCart={props.setNumberInCart}
@@ -77,7 +77,7 @@ const Store = (props) => {
 					price={600}
 					title='WATER 6.0!!'
 					description='The ULTIMATE inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
-					image='../pexels-thorn-yang-401098.jpg'
+					image='/pexels-thorn-yang-401098.jpg'
 					className='object-left-bottom'
 				/>
 			</div>
