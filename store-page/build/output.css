@@ -2017,6 +2017,10 @@ html {
   background-image: url("matheo-jbt-yqIFxfERlpU-unsplash.jpg");
 }
 
+.bg-\[url\(\"\.\/matheo-jbt-yqIFxfERlpU-unsplash\.jpg\"\)\] {
+  background-image: url("./matheo-jbt-yqIFxfERlpU-unsplash.jpg");
+}
+
 .bg-cover {
   background-size: cover;
 }
