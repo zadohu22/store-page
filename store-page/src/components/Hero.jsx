@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Hero = () => {
 	let navigate = useNavigate();
 	return (
-		<div className='hero min-h-screen bg-[url("matheo-jbt-yqIFxfERlpU-unsplash.jpg")] bg-no-repeat bg-cover bg-left-bottom'>
+		<div className='hero min-h-screen bg-[url("./matheo-jbt-yqIFxfERlpU-unsplash.jpg")] bg-no-repeat bg-cover bg-left-bottom'>
 			<div className='hero-overlay bg-opacity-80'></div>
 			<div className='hero-content text-center text-neutral-content'>
 				<div className='max-w-md'>
