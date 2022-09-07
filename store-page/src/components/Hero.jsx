@@ -4,24 +4,24 @@ import { useNavigate } from 'react-router-dom';
 const Hero = () => {
 	let navigate = useNavigate();
 	return (
-		<div className='hero min-h-screen bg-[url("skyler-sawyer-Wq-nmL12bCU-unsplash.jpg")] bg-no-repeat bg-center'>
+		<div className='hero min-h-screen bg-[url("matheo-jbt-yqIFxfERlpU-unsplash.jpg")] bg-no-repeat bg-cover bg-left-bottom'>
 			<div className='hero-overlay bg-opacity-80'></div>
 			<div className='hero-content text-center text-neutral-content'>
 				<div className='max-w-md'>
-					<h1 className='mb-5 text-5xl font-bold text-gray-400'>
-						<span className='text-orange-700'>Real</span>Halloween
+					<h1 className='mb-5 text-5xl font-bold'>
+						Only<span className='text-blue-600'>Water</span>
 					</h1>
 					<p className='mb-5'>
-						We provide{' '}
-						<span className='text-orange-700 font-extrabold'>real</span>{' '}
-						Halloween decorations. Scare your trick-or-treaters this year with
-						living breathing Vampires, Ghosts, Werewolves, etc...
+						The number one source for{' '}
+						<span className='text-blue-600 font-extrabold'>premier</span> water
+						content.
 					</p>
 					<button
+						id='shopNow'
 						onClick={() => {
 							navigate('/store');
 						}}
-						className='btn btn-primary bg-black text-gray-400 hover:bg-gray-400 hover:border-black hover:text-black border-black'
+						className='btn btn-primary text-blue-300 bg-blue-600 hover:bg-blue-300 hover:border-blue-300 hover:text-blue-600 border-white'
 					>
 						Shop Now
 					</button>

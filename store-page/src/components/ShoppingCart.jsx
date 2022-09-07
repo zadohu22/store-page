@@ -1,6 +1,17 @@
 import React from 'react';
 
 const ShoppingCart = (props) => {
+	const conditionalSubTotal = () => {
+		if (props.cartPrice !== NaN) {
+			return (
+				<span className='text-info text-gray-700'>
+					Subtotal: ${props.cartPrice}
+				</span>
+			);
+		} else {
+			return <span className='text-info'>Subtotal: $0</span>;
+		}
+	};
 	return (
 		<div className='navbar-end'>
 			<div className='flex-none'>
@@ -21,7 +32,9 @@ const ShoppingCart = (props) => {
 									d='M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z'
 								/>
 							</svg>
-							<span className='badge badge-sm indicator-item'>8</span>
+							<span className='badge badge-sm indicator-item'>
+								{props.items}
+							</span>
 						</div>
 					</label>
 					<div
@@ -29,14 +42,15 @@ const ShoppingCart = (props) => {
 						className='mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow'
 					>
 						<div className='card-body'>
-							<span className='font-bold text-lg'>8 Items</span>
-							<span className='text-info'>Subtotal: $999</span>
+							<span className='font-bold text-lg'>{props.items} Items</span>
+							{conditionalSubTotal()}
+							{/* <span className='text-info'>Subtotal: ${props.cartPrice}</span> */}
 							<div className='card-actions'>
 								<button
 									onClick={() => {
 										props.setModalOpen('modal-open');
 									}}
-									className={`btn btn-primary btn-block border-black hover:bg-black hover:text-gray-400 bg-orange-700`}
+									className={`btn btn-primary btn-block bg-blue-600 border-white hover:bg-blue-300 hover:text-blue-600`}
 								>
 									View cart
 								</button>

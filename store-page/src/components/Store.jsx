@@ -2,40 +2,82 @@ import React from 'react';
 import Nav from './Nav';
 import Card from './Card';
 
-const Store = () => {
+const Store = (props) => {
 	return (
 		<>
 			<div className='w-full h-full mt-8 grid justify-items-center items-center gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 				<Card
-					title='Vampire'
-					description="One of our most popular monsters, they will attempt to bite the necks of trick-or-treaters. Keep garlic on hand so you don't become a victim!"
-					image='DALL·E 2022-09-01 22.30.27 - large fangs coming out of the mouth.png'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setFirstCount={props.setFirstCount}
+					firstCount={props.firstCount}
+					price={100}
+					title='Water'
+					description='Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-david-bartus-879521.jpg'
 				/>
 				<Card
-					title='Zombie'
-					description="This year's harvest produced the slow-walking zombies! Keep them fenced because they will roam around mindlessly searching for brains to eat."
-					image='emad-kolahi-UIKyCJU9QFs-unsplash.jpg'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setSecondCount={props.setSecondCount}
+					secondCount={props.secondCount}
+					price={200}
+					title='Water 2.0'
+					description='Water 2.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-jens-johnsson-66090.jpg'
 				/>
 				<Card
-					title='Ghosts'
-					description='New this season, spooky scary ghosts! These ghosts were hand selected directly from Ohio, making them extra scary.'
-					image='andrew-neel-hPo-jtai17o-unsplash.jpg'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setThirdCount={props.setThirdCount}
+					thirdCount={props.thirdCount}
+					price={300}
+					title='Water 3.0'
+					description='Water 3.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-lisa-fotios-1346155.jpg'
 					className='object-left-bottom'
 				/>
 				<Card
-					title='Vampire'
-					description="One of our most popular monsters, they will attempt to bite the necks of trick-or-treaters. Keep garlic on hand so you don't become a victim!"
-					image='DALL·E 2022-09-01 22.30.27 - large fangs coming out of the mouth.png'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setFourthCount={props.setFourthCount}
+					fourthCount={props.fourthCount}
+					price={400}
+					title='Water 4.0'
+					description='Water 4.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-marko-obrvan-304784.jpg'
 				/>
 				<Card
-					title='Zombie'
-					description="This year's harvest produced the slow-walking zombies! Keep them fenced because they will roam around mindlessly searching for brains to eat."
-					image='emad-kolahi-UIKyCJU9QFs-unsplash.jpg'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setFifthCount={props.setFifthCount}
+					fifthCount={props.fifthCount}
+					price={500}
+					title='Water 5.0'
+					description='Water 5.0 is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-pixabay-40654.jpg'
 				/>
 				<Card
-					title='Ghosts'
-					description='New this season, spooky scary ghosts! These ghosts were hand selected directly from Ohio, making them extra scary.'
-					image='andrew-neel-hPo-jtai17o-unsplash.jpg'
+					setNumberInCart={props.setNumberInCart}
+					numberInCart={props.numberInCart}
+					cartPrice={props.cartPrice}
+					setCartPrice={props.setCartPrice}
+					setSixthCount={props.setSixthCount}
+					sixthCount={props.sixthCount}
+					price={600}
+					title='WATER 6.0!!'
+					description='The ULTIMATE inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.'
+					image='pexels-thorn-yang-401098.jpg'
 					className='object-left-bottom'
 				/>
 			</div>

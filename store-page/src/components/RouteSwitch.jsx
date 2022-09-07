@@ -4,12 +4,34 @@ import Hero from './Hero';
 import Store from './Store';
 import Nav from './Nav';
 
-const RouteSwitch = () => {
+const RouteSwitch = (props) => {
 	return (
 		// <Router>
 		<Routes>
 			<Route path='/' element={<Hero />} />
-			<Route path='/store' element={<Store />} />
+			<Route
+				path='/store'
+				element={
+					<Store
+						setNumberInCart={props.setNumberInCart}
+						numberInCart={props.numberInCart}
+						cartPrice={props.cartPrice}
+						setCartPrice={props.setCartPrice}
+						setFirstCount={props.setFirstCount}
+						setSecondCount={props.setSecondCount}
+						setThirdCount={props.setThirdCount}
+						setFourthCount={props.setFourthCount}
+						setFifthCount={props.setFifthCount}
+						setSixthCount={props.setSixthCount}
+						firstCount={props.firstCount}
+						secondCount={props.secondCount}
+						thirdCount={props.thirdCount}
+						fourthCount={props.fourthCount}
+						fifthCount={props.fifthCount}
+						sixthCount={props.sixthCount}
+					/>
+				}
+			/>
 		</Routes>
 		// </Router>
 	);

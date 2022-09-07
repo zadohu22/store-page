@@ -1,41 +1,35 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ShoppingCart from './ShoppingCart';
+import Modal from './Modal';
 
-const Nav = () => {
+const Nav = (props) => {
 	let navigate = useNavigate();
 	const [modalOpen, setModalOpen] = useState('');
 
-	const Modal = () => {
-		return (
-			<>
-				<div className={`modal ${modalOpen}`}>
-					<div className='modal-box relative'>
-						<label
-							htmlFor='my-modal-3'
-							className='btn btn-sm btn-circle absolute right-2 top-2'
-							onClick={() => {
-								setModalOpen('');
-							}}
-						>
-							✕
-						</label>
-						<h3 className='text-lg font-bold'>
-							Congratulations random Internet user!
-						</h3>
-						<p className='py-4'>
-							You've been selected for a chance to get one year of subscription
-							to use Wikipedia for free!
-						</p>
-					</div>
-				</div>
-			</>
-		);
-	};
-
 	return (
-		<div className='navbar bg-base-100 border-b-2 border-gray-400'>
-			<Modal />
+		<div className='navbar bg-base-100 sticky top-0 z-10'>
+			<Modal
+				numberInCart={props.numberInCart}
+				setNumberInCart={props.setNumberInCart}
+				firstCount={props.firstCount}
+				secondCount={props.secondCount}
+				thirdCount={props.thirdCount}
+				fourthCount={props.fourthCount}
+				fifthCount={props.fifthCount}
+				sixthCount={props.sixthCount}
+				cartPrice={props.cartPrice}
+				setCartPrice={props.setCartPrice}
+				setFirstCount={props.setFirstCount}
+				setSecondCount={props.setSecondCount}
+				setThirdCount={props.setThirdCount}
+				setFourthCount={props.setFourthCount}
+				setFifthCount={props.setFifthCount}
+				setSixthCount={props.setSixthCount}
+				modalOpen={modalOpen}
+				setModalOpen={setModalOpen}
+			/>
 
 			<div className='navbar-start'>
 				<a
@@ -45,12 +39,16 @@ const Nav = () => {
 					href='#'
 					className='btn btn-ghost normal-case text-xl'
 				>
-					<span className='text-orange-700'>R</span>
-					<span className='text-gray-400'>H</span>
+					<span className='text-blue-300'>O</span>
+					<span className='text-blue-600'>W</span>
 				</a>
 			</div>
 
-			<ShoppingCart setModalOpen={setModalOpen} />
+			<ShoppingCart
+				setModalOpen={setModalOpen}
+				items={props.numberInCart}
+				cartPrice={props.cartPrice}
+			/>
 		</div>
 	);
 };
